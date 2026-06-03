@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Gabriele Buondonno</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* PDF SECTION */
+
+.pdf-box{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    max-width:700px;
+    margin:auto;
+}
+
+.pdf-box a{
+    display:block;
+    padding:18px 22px;
+    background:linear-gradient(145deg,#151515,#1b1b1b);
+    border:1px solid #262626;
+    border-radius:16px;
+    color:#f5f5f5;
+    text-decoration:none;
+    font-weight:500;
+    text-align:center;
+    transition:.3s;
+}
+
+.pdf-box a:hover{
+    transform:translateY(-5px);
+    border-color:#5a5a5a;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0d0d0d;
+    color:#f5f5f5;
+    line-height:1.8;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    radial-gradient(circle at center,
+    rgba(255,255,255,0.05),
+    #0d0d0d 70%);
+    padding:40px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.line{
+    width:120px;
+    height:2px;
+    background:white;
+    margin:0 auto 40px;
+    opacity:.5;
+}
+
+.hero h1{
+    font-size:5rem;
+    font-weight:600;
+    color:white;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    color:#8f8f8f;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:1rem;
+}
+
+.quote-box{
+    margin-top:60px;
+    padding:40px;
+    border-radius:24px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.quote-box p{
+    font-size:2rem;
+    font-style:italic;
+    color:white;
+    margin-bottom:10px;
+}
+
+.quote-box h3{
+    color:#9f9f9f;
+    font-weight:400;
+}
+
+/* CONTENUTO */
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:100px 25px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+    color:white;
+}
+
+.section-title p{
+    color:#8f8f8f;
+    margin-top:10px;
+}
+
+/* Classe specifica per il titolo dei documenti per distanziarlo dall'ultima card */
+.docs-title {
+    margin-top: 80px; 
+}
+
+.card{
+    background:#151515;
+    border:1px solid #242424;
+    border-radius:20px;
+    padding:40px;
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    border-color:#4a4a4a;
+    transform:translateY(-5px);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:white;
+    font-size:1.6rem;
+    font-weight:600;
+    position:relative;
+    padding-left:18px;
+}
+
+.card h2::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:4px;
+    height:24px;
+    background:white;
+    border-radius:10px;
+}
+
+.card p{
+    color:#d0d0d0;
+    text-align:justify;
+}
+
+/* FOOTER */
+
+footer{
+    background:#080808;
+    border-top:1px solid #222;
+    text-align:center;
+    padding:35px;
+}
+
+footer p{
+    color:#8c8c8c;
+    margin:5px 0;
+}
+
+footer strong{
+    color:white;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .quote-box p{
+        font-size:1.4rem;
+    }
+
+    .section-title h2{
+        font-size:2rem;
+    }
+
+    .card{
+        padding:25px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="line"></div>
+
+        <h1>Gabriele Buondonno</h1>
+
+        <p class="subtitle">
+            Liceo Pascal di Pompei • Scienze Applicate
+        </p>
+
+        <div class="quote-box">
+            <p>“Non smettere mai di creare”</p>
+            <h3>— Hideo Kojima</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+    <div class="section-title">
+        <h2>Il mio percorso</h2>
+        <p>Cinque anni di crescita, impegno ed esperienze formative.</p>
+    </div>
+
+    <div class="card">
+        <h2>Chi sono</h2>
+        <p>
+            Mi chiamo Gabriele Buondonno e ho frequentato il Liceo Pascal di Pompei,
+            indirizzo Scienze Applicate. Durante questi cinque anni ho avuto la possibilità
+            di crescere sia dal punto di vista scolastico che personale, acquisendo nuove
+            competenze e sviluppando una maggiore consapevolezza delle mie capacità e dei
+            miei interessi.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>PCTO ed esperienze</h2>
+        <p>
+            Tra le attività più significative del mio percorso scolastico ci sono i progetti
+            di PCTO, che mi hanno permesso di confrontarmi con il mondo del lavoro, acquisire
+            competenze pratiche e vivere esperienze formative importanti per la mie crescita.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Materie e percorso scolastico</h2>
+        <p>
+            Le materie che mi hanno dato maggiore soddisfazione sono state Storia e Filosofia,
+            discipline che mi hanno aiutato a sviluppare il pensiero critico e la capacità di
+            riflessione. Ho incontrato qualche difficoltà in Fisica e Matematica, ma ho sempre
+            cercato di affrontarle con impegno e determinazione.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Prospettive future</h2>
+        <p>
+            Questi cambiare anni mi hanno aiutato a riflettere sul percorso che desidero
+            intraprendere dopo il diploma. Per questo motivo ho scelto di proseguire i miei
+            studi universitari nel campo dell’Informatica, una disciplina che unisce innovazione,
+            creatività e problem solving e che rappresenta il percorso che desidero seguire per il mio futuro.
+        </p>
+    </div>
+
+    <!-- SEZIONE DOCUMENTI (Ora integrata nello stesso container) -->
+    <div class="section-title docs-title">
+        <h2>Documenti</h2>
+        <p>Materiali relativi al mio percorso scolastico</p>
+    </div>
+
+    <div class="pdf-box">
+        <a href="fsl.pdf" target="_blank">
+            Percorsi Ex PCTO- FSL
+        </a>
+
+        <a href="educazione-civica.pdf" target="_blank">
+            Educazione Civica
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>Gabriele Buondonno</strong></p>
+    <p>Classe 5ª • Liceo Pascal di Pompei</p>
+    <p>Anno scolastico 2025-2026</p>
+</footer>
+
+</body>
+</html>
